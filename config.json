@@ -18,6 +18,15 @@
             "port": 8502,
             "description": "",
             "restart_on_crash": true
+        },
+        "gradio-scraper": {
+            "name": "gradio-scraper",
+            "url": "/gradio-scraper/",
+            "app": "/workspaces/streamlit-server/apps/gradio-scraper/app.py",
+            "venv": "",
+            "port": 8503,
+            "description": "",
+            "restart_on_crash": true
         }
     }
 }
