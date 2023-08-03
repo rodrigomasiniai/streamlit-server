@@ -11,14 +11,23 @@ DIR = Path(__file__).parent.parent.absolute()
 
 
 # Send TCP message to socket
+# Send TCP message to socket
 def send_tcp(msg, socket_port):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
         try:
             sock.connect(("localhost", socket_port))
-        except:
-            return False
-        sock.sendall(msg.encode())
-        return True
+            sock.sendall(msg.encode())
+            return True
+        except socket.gaierror as e:
+            print(f'Address-related error: {e}')
+        except socket.herror as e:
+            print(f'Host-related error: {e}')
+        except ConnectionRefusedError as e:
+            print(f'The server is actively refusing our connection: {e}')
+        except Exception as e:
+            print(f'An unexpected error occurred: {e}')
+        return False
+
 
 
 # Check if port is open

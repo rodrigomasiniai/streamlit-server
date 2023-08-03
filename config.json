@@ -6,6 +6,15 @@
             "url": "/web-scrapping/",
             "app": "/workspaces/streamlit-server/apps/web-scrapping/app.py",
             "venv": "/workspaces/streamlit-server/apps/web-scrapping/venv",
+            "port": 8501,
+            "description": "",
+            "restart_on_crash": true
+        },
+        "gradio-scrapper": {
+            "name": "gradio-scrapper",
+            "url": "/gradio-scrapper/",
+            "app": "/workspaces/streamlit-server/apps/gradio-scrapper/app.py",
+            "venv": "/workspaces/streamlit-server/apps/gradio-scrapper/venv",
             "port": 8502,
             "description": "",
             "restart_on_crash": true

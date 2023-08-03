@@ -16,6 +16,7 @@ def show_app(streamlit_app_url):
                 "name": info["name"],
                 "port": info["port"]
             }
+            break  # This will exit the loop once a match is found
     else:
         if context is None:
             return flask.abort(404)

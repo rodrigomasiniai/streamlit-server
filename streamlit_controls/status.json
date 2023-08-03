@@ -1,5 +1,8 @@
 {
     "web-scrapping": {
-        "pid": null
+        "pid": 65175
+    },
+    "gradio-scrapper": {
+        "pid": 65852
     }
 }
