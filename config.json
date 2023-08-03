@@ -1,4 +1,14 @@
 {
     "website_port": 5000,
-    "apps": {}
+    "apps": {
+        "web-scrapping": {
+            "name": "web-scrapping",
+            "url": "/web-scrapping/",
+            "app": "/workspaces/streamlit-server/apps/web-scrapping/app.py",
+            "venv": "/workspaces/streamlit-server/apps/web-scrapping/venv",
+            "port": 8502,
+            "description": "",
+            "restart_on_crash": true
+        }
+    }
 }
