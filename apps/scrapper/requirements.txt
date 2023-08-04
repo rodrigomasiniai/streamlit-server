@@ -1,0 +1,11 @@
+beautifulsoup4>=4.12.2
+Pillow>=9.5.0
+requests>=2.31.0
+Flask>=2.3.2
+zipfile2>= 0.0.12
+urllib3>=2.0.3
+pytest-shutil>=1.7.0
+mime>=0.1.0
+mimetypes-extensions>=0.1.0
+uuid>=1.30
+streamlit
