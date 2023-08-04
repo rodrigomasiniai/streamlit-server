@@ -22,7 +22,7 @@
 	],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// Install app dependencies.
-	//"postCreateCommand": "sudo apt-get update && sudo apt-get install -y libgl1-mesa-glx libpango1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info && pip3 install --user -r requirements.txt",
+	"postCreateCommand": "sudo apt-get update && python -m venv env && source /env/bin/activate && pip3 install --user -r requirements.txt",
 	// Use 'postAttachCommand' to run commands after a tool has attached to the container.
 	// Start the app.
 	//"postAttachCommand": {
