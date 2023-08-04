@@ -1,0 +1,24 @@
+streamlit
+altair==4.0
+beautifulsoup4==4.11.1
+bs4==0.0.1
+charset-normalizer==2.1.0
+faiss-cpu==1.7.2
+huggingface-hub
+idna==3.3
+nltk==3.7
+numpy==1.23.0
+onnx==1.12.0
+onnxruntime
+requests==2.28.1
+sentencepiece==0.1.96
+threadpoolctl==3.1.0
+tokenizers==0.12.1
+torch==1.12.0
+torchvision==0.13.0
+tqdm==4.64.0
+transformers==4.20.1
+txtai[pipeline] @ git+https://github.com/neuml/txtai@8925341a3cb5263886fddee4f52a3220c0ace188
+urllib3==1.26.9
+PyPDF2
+lxml
