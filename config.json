@@ -1,30 +1,39 @@
 {
     "website_port": 5000,
     "apps": {
-        "web-scrapping": {
-            "name": "web-scrapping",
-            "url": "/web-scrapping/",
-            "app": "/workspaces/streamlit-server/apps/web-scrapping/app.py",
-            "venv": "/workspaces/streamlit-server/apps/web-scrapping/venv",
-            "port": 8501,
+        "pdf-reader": {
+            "name": "pdf-reader",
+            "url": "/pdf-reader/",
+            "app": "/workspaces/streamlit-server/apps/pdf-reader/app.py",
+            "venv": "/workspaces/streamlit-server/apps/pdf-reader/venv",
+            "port": 8505,
             "description": "",
             "restart_on_crash": true
         },
-        "gradio-scrapper": {
-            "name": "gradio-scrapper",
-            "url": "/gradio-scrapper/",
-            "app": "/workspaces/streamlit-server/apps/gradio-scrapper/app.py",
-            "venv": "/workspaces/streamlit-server/apps/gradio-scrapper/venv",
-            "port": 8502,
-            "description": "",
-            "restart_on_crash": true
-        },
-        "gradio-scraper": {
-            "name": "gradio-scraper",
-            "url": "/gradio-scraper/",
-            "app": "/workspaces/streamlit-server/apps/gradio-scraper/app.py",
+        "pdf-site": {
+            "name": "pdf-site",
+            "url": "/pdf-site/",
+            "app": "/workspaces/streamlit-server/apps/pdf-site/app.py",
             "venv": "",
-            "port": 8503,
+            "port": 8506,
+            "description": "",
+            "restart_on_crash": true
+        },
+        "scrapper": {
+            "name": "scrapper",
+            "url": "/scrapper/",
+            "app": "/workspaces/streamlit-server/apps/scrapper/app.py",
+            "venv": "",
+            "port": 8507,
+            "description": "",
+            "restart_on_crash": true
+        },
+        ".gitignore": {
+            "name": ".gitignore",
+            "url": "/.gitignore/",
+            "app": "",
+            "venv": "",
+            "port": 8501,
             "description": "",
             "restart_on_crash": true
         }

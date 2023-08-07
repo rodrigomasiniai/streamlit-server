@@ -6,25 +6,38 @@
     <meta name="viewport" content="width=device-width initial-scale=1">
     <title>Streamlit Apps</title>
     <link rel="shortcut icon" href="/static/images/favicon.png">
-    <script src="/static/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
 </head>
 
-<body style="display: none">
-    <h1>Streamlit Apps</h1>
-    {% for app in apps %}
-    {% if app.running %}
-    <h2><a href="{{app.url}}">{{app.name}}</a></h2>
-    {% else %}
-    <h2>{{app.name}}</h2>
-    {% endif %}
-    <p>
-        <span class="status">
-            {% if app.running %}Running{% else %}Stopped{% endif %}
-            {% if app.description %} | {% endif%}
-        </span>
-        {{app.description}}
-    </p>
-    {% endfor %}
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+    </div>
+    <ul>
+        <li>
+          <a class="navbar-brand" href="/">
+            <div class="logo-image">
+              <img src="/static/images/logo.png" class="img-fluid">
+            </div>
+          </a>
+        </li>
+        {% for app in apps %}
+            {% if app.running %}
+                <li>
+                    <a href="{{app.url}}" class="app-link">{{app.name}}</a>
+                </li>
+            {% else %}
+                <li>
+                    <a href="#" class="app-link">{{app.name}}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+
 </body>
 
 </html>

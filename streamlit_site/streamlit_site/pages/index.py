@@ -18,4 +18,18 @@ def show_index():
     context = {
         "apps": sorted(apps.values(), key=lambda x: x["name"])
     }
-    return flask.render_template("index.html", **context)
+    response= flask.make_response(flask.render_template("index.html", **context))
+
+        # Setting the Content-Security-Policy header for the index page too
+    csp = ("frame-ancestors 'self' *.github.dev github.dev github.com; " 
+        "frame-src 'self' *.github.dev github.dev; "
+        "default-src 'self'; "
+        "script-src 'self' 'unsafe-inline' 'unsafe-eval'; "
+        "style-src 'self' 'unsafe-inline'; "
+        "img-src 'self' data:; "
+        "font-src 'self'; "
+        "connect-src 'self';")
+
+    response.headers['Content-Security-Policy'] = csp
+
+    return response

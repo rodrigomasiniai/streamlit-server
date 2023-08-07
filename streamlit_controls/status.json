@@ -7,5 +7,17 @@
     },
     "gradio-scraper": {
         "pid": null
+    },
+    ".gitignore": {
+        "pid": null
+    },
+    "pdf-reader": {
+        "pid": null
+    },
+    "scrapper": {
+        "pid": null
+    },
+    "pdf-site": {
+        "pid": null
     }
 }
